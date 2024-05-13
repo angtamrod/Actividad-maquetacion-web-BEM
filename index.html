@@ -4,69 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación WEB BEM</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <header>
-        <a class="logo" href=""><img class="logo__img" src="imgs/Logo-dark.png" alt="logo"></a>
+<body class="body">
+    <header class="header">
         <nav class="nav">
-            <ul>
-                <li><a href="main.html">MAIN</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+
+            <img class="nav__img--logo" src="imgs/Logo-dark.png" alt="logo">
+        
+            <ul class="nav__ul">
+                <li class="nav__li">MAIN</li>
+                <li class="nav__li">ABOUT</li>
+                <li class="nav__li">CONTACT</li>
             </ul>
-            <a href=""><img src="" alt="rayas"></a>
+            <img class="nav__img" src="imgs/menu-rayas.png" alt="rayas">
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <div>
-                    <img src="imgs/Masonry-list-img-1-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-2-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-3-500x1000.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-4-500x500.jpg" alt="">
+    <main class="main">
+        <section class="galeria">
+            
+            <div class="galeria__fila--multiple">
+                <div class="galeria__div--cuadrado">
+                    <div class="galeria__div--top">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-1-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-2-500x500.jpg" alt="">
+                    </div>
+                    <div class="galeria__div--base">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-6-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-7-500x500.jpg" alt=""></div>
                 </div>
-                <div>
-                    <img src="imgs/Masonry-list-img-5-1000x1000.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-6-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-7-500x500.jpg" alt="">
+                <div class="galeria__div--triptico">
+                    <img class="galeria__img--rectangulo" src="imgs/Masonry-list-img-3-500x1000.jpg" alt="">
+                    <div class="galeria__div--tres">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-4-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-8-500x500.jpg" alt=""></div>
                 </div>
-                <img src="imgs/Masonry-list-img-8-500x500.jpg" alt="">
+                <img class="galeria__img--solo" src="imgs/Masonry-list-img-5-1000x1000.jpg" alt="">
             </div>
-            <div>
-                <img src="imgs/Masonry-list-img-9-1000x1000.jpg" alt="">
-                <div>
-                    <img src="imgs/Masonry-list-img-10-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-11-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-12-500x1000.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-13-500x500.jpg" alt="">
+            <div class="galeria__fila--multiple">
+                <img class="galeria__img--solo" src="imgs/Masonry-list-img-9-1000x1000.jpg" alt="">
+                <div class="galeria__div--cuadrado">
+                    <div class="galeria__div--top">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-11-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-10-500x500.jpg" alt="">
                 </div>
-                <div>
-                    <img src="imgs/Masonry-list-img-14-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-15-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-16-500x500.jpg" alt="">
+                    <div class="galeria__div--base">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-15-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-14-500x500.jpg" alt="">
+                </div>
+                </div>
+                <div class="galeria__div--triptico">
+                    <img class="galeria__img--rectangulo" src="imgs/Masonry-list-img-12-500x1000.jpg" alt="">
+                    <div class="galeria__div--tres">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-13-500x500.jpg" alt="">
+                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-16-500x500.jpg" alt=""></div>
                 </div>
             </div>
 
-            <div>
-                <img src="imgs/Masonry-list-img-17-1000x500.jpg" alt="">
-                <div>
-                    <img src="imgs/Masonry-list-img-18-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-19-500x500.jpg" alt="">
-                </div>
-                <div>
-                    <img src="imgs/Masonry-list-img-20-500x500.jpg" alt="">
-                    <img src="imgs/Masonry-list-img-21-500x500.jpg" alt="">
-                </div>
+            <div class="galeria__fila--unica">
+                <img class="galeria__img--abajo1" src="imgs/Masonry-list-img-17-1000x500.jpg" alt="">
+                
+                <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-18-500x500.jpg" alt="">
+                
+                <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-19-500x500.jpg" alt="">
+                
+                <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-20-500x500.jpg" alt="">
+
+                <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-21-500x500.jpg" alt="">
             </div>
+            
         </section>
-        <h2>Stockholm</h2>
-        <p>Aliquam lorem ante, dapibus in, viverra quis, elit feugiat Etiam sit tellus. Phasellus rutru nulla euter ameter metus varius laoreet amet orc</p>
+        <h2 class="main__h2">Stockholm</h2>
+        <p class="main__p">Aliquam lorem ante, dapibus in, viverra quis, elit feugiat Etiam sit tellus. Phasellus rutru nulla euter ameter metus varius laoreet amet orc</p>
     </main>
 
-    <footer>
-        <p>© 2021 Qode Interactive, All Rights Reserved</p>
+    <footer class="footer">
+        <p class="footer__p">© 2021 Qode Interactive, All Rights Reserved</p>
     </footer>
 </body>
 </html>
