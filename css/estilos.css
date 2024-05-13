@@ -73,7 +73,7 @@ align-items: center;
     
 }
 
-.galeria__fila--multiple{
+.galeria--fila{
     display: flex;
     flex-direction: row;
     padding: 2px;
@@ -83,7 +83,7 @@ align-items: center;
     justify-content: space-evenly;
 }
 
-.galeria__fila--unica{
+.galeria--filafinal{
     display: flex;
     padding: 2.5px;
     flex-direction: row;
@@ -114,14 +114,14 @@ align-items: center;
     flex-direction: row;
 }
 
-.galeria__div--tres{
+.galeria__div--right{
     display: flex;
     flex-direction: column;
     gap: 1px;    
     
 }
 
-.galeria__img--solo{
+.galeria__img--sola{
     width: 462px;
     height: 462px;
 }
