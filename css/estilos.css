@@ -8,6 +8,10 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .header{
@@ -23,154 +27,113 @@
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-gap: 10%;
-padding: 2%;
+margin-top: 1.3%;
+margin-right: 2%;
+margin-left: 2%;
+margin-bottom: 0;
+
 
 }
-.nav__img--logo{
-    
-  justify-content: flex-start;
+
+.nav__div--logo{
   width: 8%;
   height: 5%;
-  margin-left: 2%;
-  margin-top: 0.5%;
+  padding-top: 0.8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+
+.nav__img--logo{
+
+  width: 100%;
   
-    
 }
 
 .nav__ul{
-display: flex;
 
-justify-content: center;
-align-items: center;
+  padding-top: 1%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  width: 5%;
+  height: 2.5%;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  
+  
 
 
 }
 
 .nav__li{
     display: inline;
-    padding-right: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    
     text-decoration: none;
     list-style-type: none;
 }
 
-.nav__img{
-    width: 2%;
-    height: 2%;
-    justify-content: flex-end;
-    
+.nav__li--1{
+  opacity: .4;
+}
 
+
+.nav__div--rayitas{
+  width: 2%;
+  height: 2%;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+
+.nav__img--rayitas{
+    width: 100%;
+   
+    justify-content: flex-end;
 }
 
 .main{
  display: flex;
  flex-direction: column;
+ flex-grow: 1;
+ gap: 2%;
  
- 
- 
+
 }
 
 .galeria{
-    flex-direction: column;
+  
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /*esto es como decir: 1fr 1fr 1fr 1fr 1fr*;*/
+    gap: 10px;
     
 }
 
-.galeria--fila{
-    display: flex;
-    flex-direction: row;
-    padding: 2px;
-    gap: 1px;
-    flex-wrap:wrap;
+.galeria-img{
     width: 100%;
-    height: 40%;
-    justify-content: space-evenly;
+    height: 100%;
+    /*Se pone todo más alargada porque toma el height más alto de la foto (el x10000)*/
 }
 
-.galeria--filamedia{
-    padding-left: 4px;
+.galeria-img--4{
+  grid-row: span 2;
+  grid-column: span 2;
 }
 
-.galeria--filafinal{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    padding: 8px;
-    gap: 5px;
-    
-   
+.galeria-img--2f{
+  grid-row: span 2;
 }
 
-.galeria__div--cuadrado{
-    display: flex;
-    flex-direction: column;
-    gap:1px;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-.galeria__div--triptico{
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-.galeria__div--top{
-    flex-direction: row;
-}
-
-.galeria__div--base{
-    flex-direction: row;
-}
-
-.galeria__div--right{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;    
-    
-}
-
-.galeria__img--sola{
-    margin-top: 2px;
-    margin-right: 1px;
-    max-width: 459px;
-    max-height: 460px;
-}
-
-.galeria__img--cuadrada{
-  max-width: 230px;
-  max-height: 230px;
-  padding: 2px;
-}
-
-.galeria__img--rectangulo{
-    margin-top: 2px;
-    max-width: 224px;
-    max-height: 461px;
-   
-}
-
-.galeria__div--bottom{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 950px;
-    margin-left: 6px;
-    gap: 5px;
-}
-
-.galeria__div--bottomright{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    max-width: 950px;
-    margin-right: 2px;
-}
-
-.galeria__img--bottom{
-    
-    max-width: 460px;
-    max-height: 220px;
+.galeria-img--2c{
+ grid-column: span 2;
 }
 
 
@@ -180,16 +143,33 @@ align-items: center;
  text-align: center;
 }
 
+.main__div--logo{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5%;
+}
+
+
 .main__p{
-    padding: 2%;
+    
+   
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
 }
 
 .footer{
     padding: 2%;
     width: 100%;
-    height: 40%;
+    height: 20%;
 
   display: flex;
   
@@ -199,6 +179,9 @@ justify-content: center;
 }
 
 .footer__p{
-    
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  font-style: normal;
 }

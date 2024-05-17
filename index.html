@@ -4,81 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetación WEB BEM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="body">
     <header class="header">
         <nav class="nav">
-
-            <img class="nav__img--logo" src="imgs/Logo-dark.png" alt="logo">
-        
+            <div class="nav__div--logo">
+                <img class="nav__img--logo" src="imgs/Logo-dark.png" alt="logo">
+            </div>
             <ul class="nav__ul">
-                <li class="nav__li">MAIN</li>
+                <li class="nav__li nav__li--1">MAIN</li>
                 <li class="nav__li">ABOUT</li>
                 <li class="nav__li">CONTACT</li>
             </ul>
-            <img class="nav__img" src="imgs/menu-rayas.png" alt="rayas">
+            <div class="nav__div--rayitas">
+                <img class="nav__img--rayitas" src="imgs/menu-rayas.png" alt="rayas">
+            </div>
         </nav>
     </header>
 
     <main class="main">
         <section class="galeria">
-            
-            <div class="galeria--fila">
-                <div class="galeria__div--cuadrado">
-                    <div class="galeria__div--top">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-1-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-2-500x500.jpg" alt="">
-                    </div>
-                    <div class="galeria__div--base">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-6-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-7-500x500.jpg" alt=""></div>
-                </div>
-                <div class="galeria__div--triptico">
-                    <img class="galeria__img--rectangulo" src="imgs/Masonry-list-img-3-500x1000.jpg" alt="">
-                    <div class="galeria__div--triptico galeria__div--right">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-4-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-8-500x500.jpg" alt=""></div>
-                </div>
-                <img class="galeria__img--sola" src="imgs/Masonry-list-img-5-1000x1000.jpg" alt="">
-            </div>
-            <div class="galeria--fila galeria--filamedia">
-                <img class="galeria__img--sola" src="imgs/Masonry-list-img-9-1000x1000.jpg" alt="">
-                <div class="galeria__div--cuadrado">
-                    <div class="galeria__div--top">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-11-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-10-500x500.jpg" alt="">
-                </div>
-                    <div class="galeria__div--base">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-15-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-14-500x500.jpg" alt="">
-                </div>
-                </div>
-                <div class="galeria__div--triptico">
-                    <img class="galeria__img--rectangulo" src="imgs/Masonry-list-img-12-500x1000.jpg" alt="">
-                    <div class="galeria__div--triptico galeria__div--right">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-13-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-16-500x500.jpg" alt=""></div>
-                </div>
-            </div>
-
-            <div class="galeria--fila galeria--filafinal">
-                <img class="galeria__img--bottom" src="imgs/Masonry-list-img-17-1000x500.jpg" alt="">
-                <div class="galeria__div--bottom">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-18-500x500.jpg" alt="">
-                
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-19-500x500.jpg" alt="">
-                </div>
-                <div class="galeria__div--bottom galeria__div--bottomright">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-20-500x500.jpg" alt="">
-                    <img class="galeria__img--cuadrada" src="imgs/Masonry-list-img-21-500x500.jpg" alt="">
-            </div>
-            
-            </div>
-            
+            <img class="galeria-img" src="imgs/Masonry-list-img-1-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-2-500x500.jpg" alt="">
+            <img class="galeria-img galeria-img--2f" src="imgs/Masonry-list-img-3-500x1000.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-4-500x500.jpg" alt="">
+            <img class="galeria-img galeria-img--4" src="imgs/Masonry-list-img-5-1000x1000.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-6-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-7-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-8-500x500.jpg" alt="">
+            <img class="galeria-img galeria-img--4" src="imgs/Masonry-list-img-9-1000x1000.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-10-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-11-500x500.jpg" alt="">
+            <img class="galeria-img galeria-img--2f" src="imgs/Masonry-list-img-12-500x1000.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-13-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-14-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-15-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-16-500x500.jpg" alt="">
+            <img class="galeria-img galeria-img--2c" src="imgs/Masonry-list-img-17-1000x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-18-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-19-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-20-500x500.jpg" alt="">
+            <img class="galeria-img" src="imgs/Masonry-list-img-21-500x500.jpg" alt="">    
         </section>
-        <h2 class="main__h2">Stockholm</h2>
-        <p class="main__p">Aliquam lorem ante, dapibus in, viverra quis, elit feugiat Etiam sit tellus. Phasellus rutru nulla euter ameter metus varius laoreet amet orc</p>
+
+        <div class="main__div--logo"><img src="imgs/Footer-logo.png" alt="" class="main__img"></div>
+        <p class="main__p">Aliquam lorem ante, dapibus in, viverra quis, elit feugiat <br> Etiam sit tellus. Phasellus rutru nulla euter ameter<br> metus varius laoreet amet orc.</p>
     </main>
 
     <footer class="footer">
