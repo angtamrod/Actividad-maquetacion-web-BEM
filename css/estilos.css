@@ -57,7 +57,7 @@ margin-bottom: 0;
   padding-top: 1%;
   padding-right: 5%;
   padding-bottom: 1%;
-  width: 5%;
+  max-width: 5%;
   height: 2.5%;
   display: flex;
   justify-content: center;
