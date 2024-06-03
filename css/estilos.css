@@ -14,6 +14,10 @@
 
 }
 
+img{
+  aspect-ratio: auto;
+}
+
 .header{
     
     flex-direction: row;
@@ -36,9 +40,10 @@ margin-bottom: 0;
 }
 
 .nav__div--logo{
-  width: 8%;
+  min-width: 6%;
+  max-width: 7%;
   height: 5%;
-  padding-top: 0.8%;
+  padding-top: 1%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -57,7 +62,7 @@ margin-bottom: 0;
   padding-top: 1%;
   padding-right: 5%;
   padding-bottom: 1%;
-  max-width: 5%;
+  max-width: 4%;
   height: 2.5%;
   display: flex;
   justify-content: center;
@@ -112,7 +117,7 @@ margin-bottom: 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    /*esto es como decir: 1fr 1fr 1fr 1fr 1fr*;*/
+   
     gap: 10px;
     
 }
@@ -120,7 +125,7 @@ margin-bottom: 0;
 .galeria-img{
     width: 100%;
     height: 100%;
-    /*Se pone todo más alargada porque toma el height más alto de la foto (el x10000)*/
+    
 }
 
 .galeria-img--4{
