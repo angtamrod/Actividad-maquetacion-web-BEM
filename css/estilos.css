@@ -35,13 +35,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 10%;
 
   justify-content: center;
   align-items: center;
   
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 1%;
+  
+  
   
   
 }
@@ -52,7 +53,8 @@
 
 .header__div--logo {
   width: 10%;
-  justify-content: center;
+  height: 100%;
+  justify-self: left;
   align-items: center;
   padding-right: 10px;
   
@@ -72,7 +74,7 @@
 .nav{
   width: 80%;
   min-width: 30%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,7 +98,7 @@
 
 .header__div--rayitas{
   max-width: 15%;
-  max-height: 15%;
+  max-height: 100%;
   
   
   
@@ -129,7 +131,7 @@
 
 .galeria{
   
-    padding: 1%;
+    padding: 0 1%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
